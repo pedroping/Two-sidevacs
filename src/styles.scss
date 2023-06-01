@@ -1,8 +1,22 @@
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   margin: 0;
+
+  .mat-app-background {
+    width: 100%;
+  }
+
+  .mat-elevation-z2 {
+    box-shadow: none !important;
+  }
+
+  .content {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }

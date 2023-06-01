@@ -1,13 +1,13 @@
 <mat-drawer-container class="example-container">
-  <mat-drawer [opened]="true" [mode]="'over'" #drawer
+  <mat-drawer [mode]="'over'" #drawer style="width: 35%"
     >I'm a drawer 2</mat-drawer
   >
   <mat-drawer-content>
     <mat-drawer-container class="example-container" [hasBackdrop]="false">
-      <mat-drawer mode="push" [opened]="true" style="width: 30px"
-        >I'm a drawer 1</mat-drawer
+      <mat-drawer mode="push" [opened]="true" style="width: 80px"
+      class="mat-elevation-z2" >I'm a drawer 1</mat-drawer
       >
-      <mat-drawer-content>
+      <mat-drawer-content class="content">
         <mat-form-field>
           <mat-label>Sidenav mode</mat-label>
           <mat-select #mode value="side">
