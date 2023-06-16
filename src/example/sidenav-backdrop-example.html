@@ -4,29 +4,38 @@
   >
   <mat-drawer-content>
     <mat-drawer-container class="example-container" [hasBackdrop]="false">
-      <mat-drawer mode="push" [opened]="true" style="width: 80px"
-      class="mat-elevation-z2" >I'm a drawer 1</mat-drawer
+      <mat-drawer
+        mode="push"
+        [opened]="true"
+        style="width: 80px"
+        class="mat-elevation-z2"
+        >I'm a drawer 1</mat-drawer
       >
-      <mat-drawer-content class="content">
-        <mat-form-field>
-          <mat-label>Sidenav mode</mat-label>
-          <mat-select #mode value="side">
-            <mat-option value="side">Side</mat-option>
-            <mat-option value="over">Over</mat-option>
-            <mat-option value="push">Push</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label>Has backdrop</mat-label>
-          <mat-select #hasBackdrop>
-            <mat-option>Unset</mat-option>
-            <mat-option [value]="true">True</mat-option>
-            <mat-option [value]="false">False</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <button mat-raised-button (click)="drawer.toggle()">
-          Toggle drawer
-        </button>
+      <mat-drawer-content>
+        <mat-toolbar>
+          <span>My Application </span>
+          <span (click)="drawer.toggle()"
+            ><mat-icon style="color: white">favorite</mat-icon></span
+          >
+        </mat-toolbar>
+        <div class="content">
+          <mat-form-field>
+            <mat-label>Sidenav mode</mat-label>
+            <mat-select #mode value="side">
+              <mat-option value="side">Side</mat-option>
+              <mat-option value="over">Over</mat-option>
+              <mat-option value="push">Push</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Has backdrop</mat-label>
+            <mat-select #hasBackdrop>
+              <mat-option>Unset</mat-option>
+              <mat-option [value]="true">True</mat-option>
+              <mat-option [value]="false">False</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
       </mat-drawer-content>
     </mat-drawer-container>
   </mat-drawer-content>
